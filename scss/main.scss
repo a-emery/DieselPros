@@ -1,0 +1,83 @@
+
+// background: rgba(34, 34, 34, 1);
+// yellow: rgba(251, 220, 68, 1);
+// white: rgba(252, 254, 255, 1);
+
+body {
+  background: rgba(100, 100, 100, 1);
+  padding: 0;
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 150px;
+  background: rgba(34, 34, 34, 1);
+  padding: 0 30px;
+  text-align: center;
+}
+
+.headerLogo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 150px;
+}
+
+.headerInfoList {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: rgba(251, 220, 68, 1);
+  list-style: none;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.headerCallUs {
+  font-weight: lighter;
+}
+
+.headerInfoListItemLink {
+  text-decoration: none;
+  color: rgba(251, 220, 68, 1);
+}
+
+.menu {
+  background: rgba(251, 220, 68, 1);
+}
+
+.menuList {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  text-align: center;
+}
+
+.menuListItem {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 25px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+
+  &:hover {
+    background: #FFEC86;
+  }
+}
+
+.menuActive {
+  background: #FFEC86;
+}
+
+.content {
+  padding: 20px 50px;
+}
+
+.subHeaderImg {
+  height: 500px;
+}

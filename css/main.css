@@ -1,0 +1,64 @@
+body {
+  background: #646464;
+  padding: 0;
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif; }
+
+.header {
+  position: relative;
+  height: 150px;
+  background: #222222;
+  padding: 0 30px;
+  text-align: center; }
+
+.headerLogo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 150px; }
+
+.headerInfoList {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: #fbdc44;
+  list-style: none;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0; }
+
+.headerCallUs {
+  font-weight: lighter; }
+
+.headerInfoListItemLink {
+  text-decoration: none;
+  color: #fbdc44; }
+
+.menu {
+  background: #fbdc44; }
+
+.menuList {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  text-align: center; }
+
+.menuListItem {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 25px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block; }
+  .menuListItem:hover {
+    background: #FFEC86; }
+
+.menuActive {
+  background: #FFEC86; }
+
+.content {
+  padding: 20px 50px; }
+
+.subHeaderImg {
+  height: 500px; }
