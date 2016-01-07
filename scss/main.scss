@@ -81,13 +81,15 @@ body {
 }
 
 .subHeader {
-  margin: 0 10%;
+  margin: 0 auto -5px auto;
   background: rgba(247, 217, 93, 1);
+  overflow: hidden;
+  height: 500px;
+  width: 1100px;
 }
 
 .subHeaderImg {
   width: 70%;
-
 }
 
 .subHeaderListContainer {
