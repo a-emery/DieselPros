@@ -3,6 +3,11 @@
 // yellow: rgba(251, 220, 68, 1);
 // white: rgba(252, 254, 255, 1);
 
+.holder {
+  text-align: center;
+  height: calc(100vh - 302px);
+}
+
 body {
   background: rgba(100, 100, 100, 1);
   padding: 0;
@@ -70,14 +75,22 @@ body {
   }
 }
 
+.menuLink {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 1);
+}
+
 .menuActive {
   background: #FFEC86;
 }
 
 .content {
   background: url('../images/engine.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(100, 100, 100, .9);
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 .subHeader {
@@ -113,5 +126,33 @@ body {
 
 .divider {
   border: 2px solid rgba(251, 220, 68, 1);
-  margin: 40px 0;
+  margin: 40px 0 0 0;
 }
+
+.aboutShop {
+  background: rgba(170, 170, 170, 1);
+  padding: 40px;
+}
+
+.aboutShopHours {
+  margin: 0;
+}
+
+/*******************
+SERVICES
+*******************/
+
+
+
+
+
+/*******************
+GALLERY
+*******************/
+
+
+
+
+/*******************
+CONTACT
+*******************/
