@@ -14,7 +14,8 @@ body {
   background: #646464;
   padding: 0;
   margin: 0;
-  font-family: 'Titillium Web', sans-serif; }
+  font-family: 'Titillium Web', sans-serif;
+  min-width: 1100px; }
 
 .header {
   position: relative;
