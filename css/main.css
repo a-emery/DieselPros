@@ -1,6 +1,14 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
 .holder {
   text-align: center;
-  height: calc(100vh - 302px); }
+  height: calc(100vh - 265px); }
 
 body {
   background: #646464;
@@ -75,7 +83,7 @@ body {
 
 .subHeader {
   margin: 0 auto;
-  background: #f7d95d;
+  background: #fbdc44;
   overflow: hidden;
   height: 500px;
   width: 1100px; }
@@ -94,21 +102,74 @@ body {
   font-size: 1.5rem;
   list-style: none;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 .subHeaderListItem {
   margin: 20px 0; }
 
+.subHeaderListItemLink {
+  text-decoration: none; }
+
+.subHeaderListItemButton {
+  border: 1px solid #222222;
+  margin: 0 20px;
+  background: #222222;
+  color: #fbdc44;
+  border-radius: 2px;
+  transition: all 250ms ease; }
+  .subHeaderListItemButton:hover {
+    background: #646464;
+    border: 1px solid #646464; }
+
 .divider {
   border: 2px solid #fbdc44;
-  margin: 40px 0 0 0; }
+  margin: 60px 0 0 0; }
 
 .aboutShop {
-  background: #aaaaaa;
   padding: 40px; }
 
 .aboutShopHours {
   margin: 0; }
+
+/*******************
+FOOTER
+*******************/
+.footer {
+  background: #aaaaaa;
+  padding: 10px; }
+  .footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.leftFooter {
+  display: inline-block;
+  width: 49%; }
+
+.rightFooter {
+  display: inline-block;
+  width: 49%;
+  float: right; }
+
+.footerHours {
+  margin: 0;
+  color: #222222;
+  font-weight: 400;
+  display: inline-block; }
+
+.footerHoursBold {
+  font-weight: bold; }
+
+.footerAddress {
+  text-align: right;
+  display: block;
+  margin: 0;
+  font-weight: 400; }
+
+.footerLink {
+  text-decoration: none;
+  color: #222222; }
 
 /*******************
 SERVICES
