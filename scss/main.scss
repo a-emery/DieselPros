@@ -7,7 +7,14 @@ $dark-background: rgb(34, 34, 34);
 $yellow: rgb(251, 220, 68);
 $light-background: rgb(100, 100, 100);
 
+// MEDIA QUERIES //
 
+$small-desktop: new-breakpoint(max-width 1150px min-width 911px 9);
+$large-tablet: new-breakpoint(max-width 910px min-width 711px 9);
+$small-tablet: new-breakpoint(max-width 710px min-width 0px 9);
+
+
+// INDEX //
 
 .holder {
   text-align: center;
@@ -19,7 +26,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
-  min-width: 1100px;
+  // min-width: 1100px;
 }
 
 .header {
@@ -28,6 +35,15 @@ body {
   background: $dark-background;
   padding: 0 30px;
   text-align: center;
+
+  @include media($large-tablet) {
+    height: auto;
+  }
+
+  @include media($small-tablet) {
+    height: auto;
+    padding: 0;
+  }
 }
 
 .headerLogo {
@@ -35,6 +51,18 @@ body {
   top: 50%;
   transform: translateY(-50%);
   height: 150px;
+
+  @include media($large-tablet) {
+    top: 0;
+    transform: translateY(0);
+  }
+
+  @include media($small-tablet) {
+    top: 0;
+    transform: translateY(0);
+    margin: 0 auto;
+  }
+
 }
 
 .headerInfoList {
@@ -46,10 +74,23 @@ body {
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
+
+  @include media($large-tablet) {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  @include media($small-tablet) {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
 
 .headerCallUs {
   font-weight: lighter;
+
 }
 
 .headerInfoListItemLink {
@@ -106,18 +147,53 @@ body {
   overflow: hidden;
   height: 500px;
   width: 1100px;
+
+  @include media($small-desktop) {
+    width: 900px;
+    height: 400px;
+  }
+
+  @include media($large-tablet) {
+    width: 700px;
+    height: 300px;
+  }
+
+  @include media($small-tablet) {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
 }
 
-.subHeaderImg {
+.subHeaderImgWrapper {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   width: 70%;
+  display: inline-block;
+  height: calc(100vw * .6492506);
+
+  @include media($small-tablet) {
+    width: 100%;
+    top: 0%;
+    transform: translateY(0%);
+  }
+}
+
+.subHeaderImg {
+  width: 100%;
+  height: calc(100vw * .6492506);
 }
 
 .subHeaderListContainer {
   float: right;
   width: 30%;
+
+  @include media($small-tablet) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
 }
 
 .subHeaderList {
@@ -126,6 +202,10 @@ body {
   text-align: center;
   padding: 0;
   position: relative;
+
+  @include media($large-tablet) {
+    font-size: 1rem;
+  }
 }
 
 .subHeaderListItem {
@@ -176,12 +256,22 @@ FOOTER
 .leftFooter {
   display: inline-block;
   width: 49%;
+
+  @include media($small-tablet) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .rightFooter {
   display: inline-block;
   width: 49%;
   float: right;
+
+  @include media($small-tablet) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .footerHours {
@@ -200,6 +290,10 @@ FOOTER
   display: block;
   margin: 0;
   font-weight: 400;
+
+  @include media($small-tablet) {
+    text-align: center;
+  }
 }
 
 .footerLink {
