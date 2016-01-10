@@ -11,7 +11,8 @@ $light-background: rgb(100, 100, 100);
 
 $small-desktop: new-breakpoint(max-width 1150px min-width 911px 9);
 $large-tablet: new-breakpoint(max-width 910px min-width 711px 9);
-$small-tablet: new-breakpoint(max-width 710px min-width 0px 9);
+$small-tablet: new-breakpoint(max-width 710px min-width 669px 9);
+$large-mobile: new-breakpoint(max-width 668px min-width 0px 9);
 
 
 // INDEX //
@@ -44,6 +45,11 @@ body {
     height: auto;
     padding: 0;
   }
+
+  @include media($large-mobile) {
+    height: auto;
+    padding: 0;
+  }
 }
 
 .headerLogo {
@@ -61,6 +67,14 @@ body {
     top: 0;
     transform: translateY(0);
     margin: 0 auto;
+  }
+
+  @include media($large-mobile) {
+    top: 0;
+    transform: translateY(0);
+    margin: 0 auto;
+    width: 100vw;
+    height: calc(100vw * .375748503);
   }
 
 }
@@ -82,6 +96,12 @@ body {
   }
 
   @include media($small-tablet) {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  @include media($large-mobile) {
     position: relative;
     top: 0;
     right: 0;
@@ -163,6 +183,12 @@ body {
     margin: 0 auto;
     height: auto;
   }
+
+  @include media($large-mobile) {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
 }
 
 .subHeaderImgWrapper {
@@ -174,6 +200,12 @@ body {
   height: calc(100vw * .6492506);
 
   @include media($small-tablet) {
+    width: 100%;
+    top: 0%;
+    transform: translateY(0%);
+  }
+
+  @include media($large-mobile) {
     width: 100%;
     top: 0%;
     transform: translateY(0%);
@@ -194,6 +226,12 @@ body {
     margin: 0 auto;
     padding: 0 5%;
   }
+
+  @include media($large-mobile) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
 }
 
 .subHeaderList {
@@ -205,6 +243,14 @@ body {
 
   @include media($large-tablet) {
     font-size: 1rem;
+  }
+
+  @include media($small-tablet) {
+    font-size: 1rem;
+  }
+
+  @include media($large-mobile) {
+    font-size: 1.2rem;
   }
 }
 
@@ -261,6 +307,11 @@ FOOTER
     width: 100%;
     text-align: center;
   }
+
+  @include media($large-mobile) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .rightFooter {
@@ -269,6 +320,11 @@ FOOTER
   float: right;
 
   @include media($small-tablet) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include media($large-mobile) {
     width: 100%;
     text-align: center;
   }
@@ -292,6 +348,10 @@ FOOTER
   font-weight: 400;
 
   @include media($small-tablet) {
+    text-align: center;
+  }
+
+  @include media($large-mobile) {
     text-align: center;
   }
 }

@@ -25,7 +25,11 @@ body {
   @media screen and (max-width: 910px) and (min-width: 711px) {
     .header {
       height: auto; } }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .header {
+      height: auto;
+      padding: 0; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .header {
       height: auto;
       padding: 0; } }
@@ -39,11 +43,18 @@ body {
     .headerLogo {
       top: 0;
       transform: translateY(0); } }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
     .headerLogo {
       top: 0;
       transform: translateY(0);
       margin: 0 auto; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .headerLogo {
+      top: 0;
+      transform: translateY(0);
+      margin: 0 auto;
+      width: 100vw;
+      height: calc(100vw * .375748503); } }
 
 .headerInfoList {
   position: absolute;
@@ -59,7 +70,12 @@ body {
       position: relative;
       top: 0;
       right: 0; } }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .headerInfoList {
+      position: relative;
+      top: 0;
+      right: 0; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .headerInfoList {
       position: relative;
       top: 0;
@@ -121,7 +137,12 @@ body {
     .subHeader {
       width: 700px;
       height: 300px; } }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .subHeader {
+      width: 90%;
+      margin: 0 auto;
+      height: auto; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .subHeader {
       width: 90%;
       margin: 0 auto;
@@ -134,7 +155,12 @@ body {
   width: 70%;
   display: inline-block;
   height: calc(100vw * .6492506); }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .subHeaderImgWrapper {
+      width: 100%;
+      top: 0%;
+      transform: translateY(0%); } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .subHeaderImgWrapper {
       width: 100%;
       top: 0%;
@@ -147,7 +173,12 @@ body {
 .subHeaderListContainer {
   float: right;
   width: 30%; }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .subHeaderListContainer {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 5%; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .subHeaderListContainer {
       width: 100%;
       margin: 0 auto;
@@ -162,6 +193,12 @@ body {
   @media screen and (max-width: 910px) and (min-width: 711px) {
     .subHeaderList {
       font-size: 1rem; } }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .subHeaderList {
+      font-size: 1rem; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .subHeaderList {
+      font-size: 1.2rem; } }
 
 .subHeaderListItem {
   margin: 20px 0; }
@@ -204,7 +241,11 @@ FOOTER
 .leftFooter {
   display: inline-block;
   width: 49%; }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .leftFooter {
+      width: 100%;
+      text-align: center; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .leftFooter {
       width: 100%;
       text-align: center; } }
@@ -213,7 +254,11 @@ FOOTER
   display: inline-block;
   width: 49%;
   float: right; }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .rightFooter {
+      width: 100%;
+      text-align: center; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .rightFooter {
       width: 100%;
       text-align: center; } }
@@ -232,7 +277,10 @@ FOOTER
   display: block;
   margin: 0;
   font-weight: 400; }
-  @media screen and (max-width: 710px) and (min-width: 0px) {
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .footerAddress {
+      text-align: center; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
     .footerAddress {
       text-align: center; } }
 
