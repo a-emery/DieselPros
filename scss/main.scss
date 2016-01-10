@@ -214,7 +214,17 @@ body {
 
 .subHeaderImg {
   width: 100%;
-  height: calc(100vw * .6492506);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include media($small-tablet) {
+    height: calc(100vw * .6492506);
+  }
+
+  @include media($large-mobile) {
+    height: calc(100vw * .6492506);
+  }
 }
 
 .subHeaderListContainer {
