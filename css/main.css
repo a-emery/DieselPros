@@ -254,6 +254,9 @@ body {
       color: #fbdc44;
       text-align: center; } }
 
+.mobileButtonContainer {
+  padding: 10px 0; }
+
 .mobileButtonText {
   color: #fbdc44; }
 
