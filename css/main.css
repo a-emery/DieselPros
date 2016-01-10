@@ -168,7 +168,15 @@ body {
 
 .subHeaderImg {
   width: 100%;
-  height: calc(100vw * .6492506); }
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .subHeaderImg {
+      height: calc(100vw * .6492506); } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .subHeaderImg {
+      height: calc(100vw * .6492506); } }
 
 .subHeaderListContainer {
   float: right;
