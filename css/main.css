@@ -258,7 +258,8 @@ body {
   padding: 10px 0; }
 
 .mobileButtonText {
-  color: #fbdc44; }
+  color: #fbdc44;
+  margin: 0; }
 
 .divider {
   border: 2px solid #fbdc44;
