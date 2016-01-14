@@ -200,7 +200,7 @@ body {
   position: absolute;
   right: 0;
   left: 0;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   background: #fbdc44;
   transition: all 0.3s ease; }
