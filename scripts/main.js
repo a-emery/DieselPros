@@ -4,7 +4,7 @@ $('.subHeaderListItem').click(function(){
 
 $('document').ready(function(){
   console.log('ready');
-  var images = ["./images/engine.jpeg","./images/semiTruckRepair.jpg","./images/murica.jpg","./images/americaTruck.png","./images/largeLogo.png"];
+  var images = ["./images/engine.jpeg","./images/semiTruckRepair.jpg","./images/americaTruck.png","./images/largeLogo.png"];
   var i = 0;
   var renew = setInterval(function(){
     if(images.length == i){
@@ -26,5 +26,14 @@ $('document').ready(function(){
 $(document).ready(function(){
 	$('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
+    if ($('.content').css('margin-top') === '0px') {
+      console.log('hello');
+      $('.content').css('margin-top','100px');
+      $('.hamburgerMenu').css('max-height','1000px');
+    }
+    else {
+      $('.content').css('margin-top','0px');
+      $('.hamburgerMenu').css('max-height','0px');
+    }
 	});
 });
