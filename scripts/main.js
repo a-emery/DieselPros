@@ -28,7 +28,7 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
     if ($('.content').css('margin-top') === '0px') {
       console.log('hello');
-      $('.content').css('margin-top','100px');
+      $('.content').css('margin-top','180px');
       $('.hamburgerMenu').css('max-height','1000px');
     }
     else {
