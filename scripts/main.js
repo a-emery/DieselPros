@@ -29,7 +29,7 @@ $(document).ready(function(){
     if ($('.content').css('margin-top') === '0px') {
       console.log('hello');
       $('.content').css('margin-top','180px');
-      $('.hamburgerMenu').css('max-height','200px');
+      $('.hamburgerMenu').css('max-height','180px');
     }
     else {
       $('.content').css('margin-top','0px');
