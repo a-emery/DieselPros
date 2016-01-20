@@ -453,6 +453,15 @@ CONTACT
   border-radius: 5px;
   padding: 1% 2.5% 2.5% 2.5%;
   color: #fbdc44; }
+  @media screen and (max-width: 910px) and (min-width: 711px) {
+    .contactContainer {
+      width: 90%; } }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .contactContainer {
+      width: 90%; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .contactContainer {
+      width: 90%; } }
 
 .leftContact {
   display: inline-block;
@@ -523,13 +532,55 @@ label {
   display: inline-block;
   width: 20%;
   vertical-align: top; }
+  @media screen and (max-width: 910px) and (min-width: 711px) {
+    .inputLabel {
+      width: 100%;
+      margin-bottom: 0; } }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .inputLabel {
+      width: 100%;
+      margin-bottom: 0; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .inputLabel {
+      width: 100%;
+      margin-bottom: 0; } }
+
+@media screen and (max-width: 910px) and (min-width: 711px) {
+  .formInput {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 710px) and (min-width: 669px) {
+  .formInput {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 668px) and (min-width: 0px) {
+  .formInput {
+    margin-bottom: 10px; } }
 
 .formFirstName {
   width: 37.5%; }
+  @media screen and (max-width: 910px) and (min-width: 711px) {
+    .formFirstName {
+      width: 47.5%; } }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .formFirstName {
+      width: 47.5%; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .formFirstName {
+      width: 47.5%; } }
 
 .formLastName {
   width: 37.5%;
   float: right; }
+  @media screen and (max-width: 910px) and (min-width: 711px) {
+    .formLastName {
+      width: 47.5%; } }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .formLastName {
+      width: 47.5%; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .formLastName {
+      width: 47.5%; } }
 
 .formEmail {
   width: 43%; }
@@ -550,7 +601,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .formMessage {
   width: 80%;
-  height: 200px; }
+  height: 200px;
+  resize: none; }
+  @media screen and (max-width: 910px) and (min-width: 711px) {
+    .formMessage {
+      width: 100%; } }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .formMessage {
+      width: 100%; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .formMessage {
+      width: 100%; } }
 
 .formSubmit {
   float: right;
