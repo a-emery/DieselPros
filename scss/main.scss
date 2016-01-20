@@ -673,6 +673,12 @@ label {
   width: 43%;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .telInputOne {
   width: 3rem;
 }
