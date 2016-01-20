@@ -54,6 +54,24 @@ $(window).resize(function(){
 });
 
 
+$('.telInputOne').keypress(function() {
+    if (this.value.length >= 3) {
+        return false;
+    }
+});
+
+$('.telInputTwo').keypress(function() {
+    if (this.value.length >= 3) {
+        return false;
+    }
+});
+
+$('.telInputThree').keypress(function() {
+    if (this.value.length >= 4) {
+        return false;
+    }
+});
+
 $(".telInputOne").keyup(function() {
     $(".telInputOne").val(this.value.match(/[0-9]*/));
 });
