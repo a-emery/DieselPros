@@ -3,7 +3,6 @@ $('.subHeaderListItem').click(function(){
 });
 
 $('document').ready(function(){
-  console.log('ready');
   var images = ["./images/engine.jpeg","./images/semiTruckRepair.jpg","./images/americaTruck.png","./images/largeLogo.png"];
   var i = 0;
   var renew = setInterval(function(){
@@ -21,6 +20,12 @@ $('document').ready(function(){
       }).fadeIn(300);
     }
   },5000);
+
+  var cw = $('.googleMapEmbed').width();
+  $('.googleMapEmbed').css({'height':cw+'px'});
+
+  var addressHeight = $('.contactAddressWrapper').height();
+  $('.contactAddressIcon').css({'height':addressHeight+'px'});
 });
 
 $(document).ready(function(){
@@ -36,4 +41,27 @@ $(document).ready(function(){
       $('.hamburgerMenu').css('height','0px');
     }
 	});
+});
+
+// $('.googleMapEmbed').width();
+
+
+
+
+$(window).resize(function(){
+  var cw = $('.googleMapEmbed').width();
+  $('.googleMapEmbed').css({'height':cw+'px'});
+});
+
+
+$(".telInputOne").keyup(function() {
+    $(".telInputOne").val(this.value.match(/[0-9]*/));
+});
+
+$(".telInputTwo").keyup(function() {
+    $(".telInputTwo").val(this.value.match(/[0-9]*/));
+});
+
+$(".telInputThree").keyup(function() {
+    $(".telInputThree").val(this.value.match(/[0-9]*/));
 });
