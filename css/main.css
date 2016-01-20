@@ -470,10 +470,32 @@ CONTACT
   background: rgba(34, 34, 34, 0.8);
   padding: 5px;
   border-radius: 5px; }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .leftContact {
+      width: 100%; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .leftContact {
+      width: 90%; } }
+
+@media screen and (max-width: 710px) and (min-width: 669px) {
+  .contactInfoWrapper {
+    display: inline-block;
+    width: 40%; } }
+
+@media screen and (max-width: 668px) and (min-width: 0px) {
+  .contactInfoWrapper {
+    display: inline-block;
+    width: 40%; } }
 
 .leftContact h2 {
   margin: 0;
   font-weight: 200; }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .leftContact h2 {
+      text-align: center; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .leftContact h2 {
+      text-align: center; } }
 
 .leftContact p {
   margin: 0; }
@@ -509,16 +531,42 @@ CONTACT
 .googleMapEmbed {
   width: 100%;
   margin: 15px 0; }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .googleMapEmbed {
+      display: inline-block;
+      width: 40%;
+      float: right;
+      vertical-align: top; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .googleMapEmbed {
+      display: inline-block;
+      width: 40%;
+      float: right;
+      vertical-align: top; } }
 
 .rightContact {
   display: inline-block;
   width: 70%;
   padding-left: 10%;
   vertical-align: top; }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .rightContact {
+      width: 90%;
+      padding: 0; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .rightContact {
+      width: 90%;
+      padding: 0; } }
 
 .formHeader {
   margin: 0 0 20px 0;
   font-weight: 200; }
+  @media screen and (max-width: 710px) and (min-width: 669px) {
+    .formHeader {
+      text-align: center; } }
+  @media screen and (max-width: 668px) and (min-width: 0px) {
+    .formHeader {
+      text-align: center; } }
 
 .formElement {
   font-size: 1.1rem;

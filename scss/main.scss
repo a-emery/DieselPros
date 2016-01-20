@@ -594,11 +594,39 @@ CONTACT
   background: rgba(34, 34, 34, .8);
   padding: 5px;
   border-radius: 5px;
+
+  @include media($small-tablet) {
+    width: 100%;
+  }
+
+  @include media($large-mobile) {
+    width: 90%;
+  }
+}
+
+.contactInfoWrapper {
+  @include media($small-tablet) {
+    display: inline-block;
+    width: 40%;
+  }
+
+  @include media($large-mobile) {
+    display: inline-block;
+    width: 40%;
+  }
 }
 
 .leftContact h2 {
   margin: 0;
   font-weight: 200;
+
+  @include media($small-tablet) {
+    text-align: center;
+  }
+
+  @include media($large-mobile) {
+    text-align: center;
+  }
 }
 
 .leftContact p {
@@ -642,6 +670,20 @@ CONTACT
 .googleMapEmbed {
   width: 100%;
   margin: 15px 0;
+
+  @include media($small-tablet) {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    vertical-align: top;
+  }
+
+  @include media($large-mobile) {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    vertical-align: top;
+  }
 }
 
 .rightContact {
@@ -649,11 +691,29 @@ CONTACT
   width: 70%;
   padding-left: 10%;
   vertical-align: top;
+
+  @include media($small-tablet) {
+    width: 90%;
+    padding: 0;
+  }
+
+  @include media($large-mobile) {
+    width: 90%;
+    padding: 0;
+  }
 }
 
 .formHeader {
   margin: 0 0 20px 0;
   font-weight: 200;
+
+  @include media($small-tablet) {
+    text-align: center;
+  }
+
+  @include media($large-mobile) {
+    text-align: center;
+  }
 }
 
 .formElement {
