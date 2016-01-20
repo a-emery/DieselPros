@@ -283,7 +283,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(100, 100, 100, .9);
-  padding: 40px 0 0 0;
+  padding: 40px 0 60px 0;
   // transition: all .15s ease;
 }
 
@@ -474,6 +474,7 @@ FOOTER
 
 .footer {
   background: rgba(170, 170, 170, 1);
+  border-top: 4px solid $yellow;
   padding: 10px;
   @include clearfix;
 }
@@ -558,3 +559,140 @@ GALLERY
 /*******************
 CONTACT
 *******************/
+
+.contactHeader {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.contactContainer {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(34, 34, 34, .8);
+  border-radius: 5px;
+  padding: 1% 2.5% 2.5% 2.5%;
+  color: $yellow;
+}
+
+.leftContact {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  background: rgba(34, 34, 34, .8);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.leftContact h2 {
+  margin: 0;
+  font-weight: 200;
+}
+
+.leftContact p {
+  margin: 0;
+}
+
+.contactAddressIcon {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  padding-bottom: 9px;
+}
+
+.verticalAlign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contactAddress {
+  margin: 10px 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.contactPhone, .contactEmail{
+  padding: 5px 0;
+}
+
+.fa {
+  margin-right: 7px;
+}
+
+.contactPhone a, .contactEmail a {
+  color: $yellow;
+  text-decoration: none;
+}
+
+.googleMapEmbed {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.rightContact {
+  display: inline-block;
+  width: 70%;
+  padding-left: 10%;
+  vertical-align: top;
+}
+
+.formHeader {
+  margin: 0 0 20px 0;
+  font-weight: 200;
+}
+
+.formElement {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 7px 0;
+}
+
+label {
+  display: block;
+}
+
+.inputLabel {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+.formFirstName {
+  width: 37.5%;
+}
+
+.formLastName {
+  width: 37.5%;
+  float: right;
+}
+
+.formEmail {
+  width: 43%;
+}
+
+.telInputOne {
+  width: 3rem;
+}
+
+.telInputTwo {
+  width: 3rem;
+}
+
+.telInputThree {
+  width: 4rem;
+}
+
+.formMessage {
+  width: 80%;
+  height: 200px;
+}
+
+.formSubmit {
+  float: right;
+  background: $yellow;
+  border: none;
+  width: 80px;
+}
