@@ -651,6 +651,9 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+.telInput {
+  width: 10rem; }
+
 .telInputOne {
   width: 3rem; }
 
