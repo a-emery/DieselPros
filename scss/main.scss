@@ -13,6 +13,7 @@ $small-desktop: new-breakpoint(max-width 1150px min-width 911px 9);
 $large-tablet: new-breakpoint(max-width 910px min-width 711px 9);
 $small-tablet: new-breakpoint(max-width 710px min-width 669px 9);
 $large-mobile: new-breakpoint(max-width 668px min-width 0px 9);
+$mobile: new-breakpoint(max-width 460px min-width 0px 9);
 
 
 // INDEX //
@@ -583,7 +584,7 @@ CONTACT
   }
 
   @include media($large-mobile) {
-    width: 90%;
+    width: 98%;
   }
 }
 
@@ -613,6 +614,12 @@ CONTACT
   @include media($large-mobile) {
     display: inline-block;
     width: 40%;
+    text-align: center;
+  }
+
+  @include media($mobile) {
+    display: inline-block;
+    width: 100%;
   }
 }
 
@@ -684,6 +691,14 @@ CONTACT
     float: right;
     vertical-align: top;
   }
+
+  @include media($mobile) {
+    width: 80%;
+    display: block;
+    margin: 15px 10%;
+    float: none;
+    margin: 0 auto;
+  }
 }
 
 .rightContact {
@@ -693,12 +708,12 @@ CONTACT
   vertical-align: top;
 
   @include media($small-tablet) {
-    width: 90%;
+    width: 100%;
     padding: 0;
   }
 
   @include media($large-mobile) {
-    width: 90%;
+    width: 100%;
     padding: 0;
   }
 }

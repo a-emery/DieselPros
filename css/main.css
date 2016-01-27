@@ -461,7 +461,7 @@ CONTACT
       width: 90%; } }
   @media screen and (max-width: 668px) and (min-width: 0px) {
     .contactContainer {
-      width: 90%; } }
+      width: 98%; } }
 
 .leftContact {
   display: inline-block;
@@ -485,7 +485,13 @@ CONTACT
 @media screen and (max-width: 668px) and (min-width: 0px) {
   .contactInfoWrapper {
     display: inline-block;
-    width: 40%; } }
+    width: 40%;
+    text-align: center; } }
+
+@media screen and (max-width: 460px) and (min-width: 0px) {
+  .contactInfoWrapper {
+    display: inline-block;
+    width: 100%; } }
 
 .leftContact h2 {
   margin: 0;
@@ -543,6 +549,13 @@ CONTACT
       width: 40%;
       float: right;
       vertical-align: top; } }
+  @media screen and (max-width: 460px) and (min-width: 0px) {
+    .googleMapEmbed {
+      width: 80%;
+      display: block;
+      margin: 15px 10%;
+      float: none;
+      margin: 0 auto; } }
 
 .rightContact {
   display: inline-block;
@@ -551,11 +564,11 @@ CONTACT
   vertical-align: top; }
   @media screen and (max-width: 710px) and (min-width: 669px) {
     .rightContact {
-      width: 90%;
+      width: 100%;
       padding: 0; } }
   @media screen and (max-width: 668px) and (min-width: 0px) {
     .rightContact {
-      width: 90%;
+      width: 100%;
       padding: 0; } }
 
 .formHeader {
