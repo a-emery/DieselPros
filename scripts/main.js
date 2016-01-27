@@ -52,34 +52,3 @@ $(window).resize(function(){
   var cw = $('.googleMapEmbed').width();
   $('.googleMapEmbed').css({'height':cw+'px'});
 });
-
-
-$('.telInputOne').keypress(function() {
-    if (this.value.length >= 3) {
-        return false;
-    }
-});
-
-$('.telInputTwo').keypress(function() {
-    if (this.value.length >= 3) {
-        return false;
-    }
-});
-
-$('.telInputThree').keypress(function() {
-    if (this.value.length >= 4) {
-        return false;
-    }
-});
-
-$(".telInputOne").keyup(function() {
-    $(".telInputOne").val(this.value.match(/[0-9]*/));
-});
-
-$(".telInputTwo").keyup(function() {
-    $(".telInputTwo").val(this.value.match(/[0-9]*/));
-});
-
-$(".telInputThree").keyup(function() {
-    $(".telInputThree").val(this.value.match(/[0-9]*/));
-});
