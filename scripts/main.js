@@ -26,6 +26,9 @@ $('document').ready(function(){
 
   var addressHeight = $('.contactAddressWrapper').height();
   $('.contactAddressIcon').css({'height':addressHeight+'px'});
+
+  var iw = $('.galleryListItemImage').width() * 0.66;
+  $('.galleryListItemImage').css({'height':iw+'px'});
 });
 
 $(document).ready(function(){
@@ -51,4 +54,9 @@ $(document).ready(function(){
 $(window).resize(function(){
   var cw = $('.googleMapEmbed').width();
   $('.googleMapEmbed').css({'height':cw+'px'});
+});
+
+$(window).resize(function(){
+  var iw = $('.galleryListItemImage').width() * 0.66;
+  $('.galleryListItemImage').css({'height':iw+'px'});
 });

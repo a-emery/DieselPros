@@ -554,7 +554,40 @@ SERVICES
 GALLERY
 *******************/
 
+.galleryContainer {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(34, 34, 34, .8);
+  border-radius: 5px;
+  padding: 1% 2.5% 2.5% 2.5%;
+  color: $yellow;
+}
 
+.galleryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.galleryListItem {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 40px 0;
+  width: 33.3%;
+  overflow: hidden;
+}
+
+.galleryListItemImage {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.galleryListItemDescription {
+  width: 90%;
+  margin: 0 5%;
+  text-align: center;
+  height: 3rem;
+}
 
 
 /*******************
