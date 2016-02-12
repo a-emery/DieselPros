@@ -447,6 +447,41 @@ body {
   }
 }
 
+.subContent {
+  margin: 20px auto 0 auto;
+  background: rgba(34, 34, 34, .8);
+  overflow: hidden;
+  width: 1100px;
+
+  @include media($small-desktop) {
+    width: 900px;
+  }
+
+  @include media($large-tablet) {
+    width: 700px;
+  }
+
+  @include media($small-tablet) {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  @include media($large-mobile) {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $yellow;
+    text-align: center;
+  }
+}
+
+
 .mobileButtonContainer {
   padding: 10px 0;
 }
