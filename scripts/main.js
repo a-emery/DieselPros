@@ -1,6 +1,3 @@
-$('.subHeaderListItem').click(function(){
-  console.log('hello');
-});
 
 $('document').ready(function(){
   var images = ["./images/engine.jpeg","./images/semiTruckRepair.jpg","./images/americaTruck.png","./images/largeLogo.png"];
@@ -29,6 +26,7 @@ $('document').ready(function(){
 
   var iw = $('.galleryListItemImage').width() * 0.66;
   $('.galleryListItemImage').css({'height':iw+'px'});
+
 });
 
 $(document).ready(function(){

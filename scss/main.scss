@@ -931,34 +931,20 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /*******************
-CONTACT
+BLOG
 *******************/
 
-.rss-title {
-  display: none;
-}
 
-.rss-items {
-  list-style: none;
-  padding: 0;
-}
+#content {
+  a {
+    color: inherit;
+  }
 
-li.rss-item {
-  margin-bottom: 100px;
-}
+  .byline, .comments-link, .edit-link, .screen-reader-text {
+    display: none;
+  }
 
-a.rss-item {
-  color: $yellow;
-  font-size: 2rem;
-  text-decoration: none;
-  text-align: right;
-}
-
-.rss-date {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.rss-box a {
-  color: $yellow;
+  .entry-content {
+    margin-bottom: 100px;
+  }
 }

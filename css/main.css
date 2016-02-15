@@ -741,7 +741,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 80px; }
 
 /*******************
-CONTACT
+BLOG
 *******************/
 .rss-title {
   display: none; }
@@ -765,3 +765,7 @@ a.rss-item {
 
 .rss-box a {
   color: #fbdc44; }
+
+table.rssdog {
+  border-style: none;
+  background: green; }
